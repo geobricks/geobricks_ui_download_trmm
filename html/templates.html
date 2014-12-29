@@ -1,2 +1,34 @@
-<template>
+<template id='main_structure'>
+
+    <div class='row'>
+
+        <div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+            <label for='year_selector' class='top-space-1X' id='year_label'>
+                {{years}} <i class='fa fa-refresh fa-spin'></i>
+            </label>
+            <select id='year_selector' style='width: 100%;' data-placeholder='{{please_select}}'>
+
+            </select>
+        </div>
+
+        <div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+            <label for='month_selector' class='top-space-1X' id='from_date_label'>
+                {{months}} <i class='fa fa-refresh fa-spin'></i>
+            </label>
+            <select id='month_selector' style='width: 100%;' data-placeholder='{{please_select}}'>
+
+            </select>
+        </div>
+
+        <div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+            <label for='day_selector' class='top-space-1X' id='to_date_label'>
+                {{days}} <i class='fa fa-refresh fa-spin'></i>
+            </label>
+            <select id='day_selector' style='width: 100%;' data-placeholder='{{please_select}}'>
+
+            </select>
+        </div>
+
+    </div>
+
 </template>
