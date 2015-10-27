@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>TRMM Data Downloader</title>
+        <link href='css/semantic.min.css' rel='stylesheet'>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+        <script data-main='js/main' src='js/libs/require.js'></script>
+    </head>
+    <body>
+        <br>
+        <div class='ui stackable centered page grid'>
+            <div class='column'>
+                <div class='ui segment'>
+                    <h1>
+                        <i class='fa fa-download'></i> TRMM Data Downloader
+                    </h1>
+                    <form class='ui form'>
+                        <div class='two fields'>
+                            <div class='field'>
+                                <label>Username</label>
+                                <input type='text' name='username' placeholder='e.g. name.surname@example.com'>
+                            </div>
+                            <div class='field'>
+                                <label>Password</label>
+                                <input type='password' name='password' placeholder='e.g. name.surname@example.com'>
+                            </div>
+                        </div>
+                        <div class='field'>
+                            <label>Data Frequency</label>
+                            <select class='ui dropdown'>
+                                <option value='daily'>Daily</option>
+                                <option value='hours'>3 Hours</option>
+                            </select>
+                        </div>
+                        <div class='two fields'>
+                            <div class='field'>
+                                <label>From Date</label>
+                                <input type='date' id='from_date' placeholder='31/07/2015' value='2015-07-31'>
+                            </div>
+                            <div class='field'>
+                                <label>To Date</label>
+                                <input type='date' id='to_date' placeholder='31/07/2015' value='2015-07-31'>
+                            </div>
+                        </div>
+                        <br>
+                        <button class='ui large blue button' type='submit' style='width: 100%;'>
+                            <i class='fa fa-play'></i>&nbsp;&nbsp;Start Layers Download
+                        </button>
+                    </form>
+                    <h2>
+                        Progress
+                    </h2>
+                    <div class='ui large blue progress' data-percent='23'>
+                        <div class='bar' style='transition-duration: 300ms; width: 23%;'>
+                            <div class='progress'>23%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
